@@ -159,7 +159,7 @@
 
         Navigation_mouse {
             bindings = <
-&cmd_tab     &alt_tab   &cmd_ctrl_left   &cmd_ctrl_right    &mo 5              &trans    &ctrl_shift_tab  &ctrl_tab    &trans     &trans
+&cmd_tab     &alt_tab   &cmd_ctrl_left   &cmd_ctrl_right    &mo 5              &trans    &ctrl_shft_tab  &ctrl_tab    &trans     &trans
 &kp LCMD     &kp LALT   &kp LCTRL        &kp LSHFT          &trans             &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
 &kp LS(TAB)  &mkp MCLK  &mkp RCLK        &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
                         &trans           &trans             &trans             &trans    &trans

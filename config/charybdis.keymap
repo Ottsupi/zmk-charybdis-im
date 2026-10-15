@@ -80,60 +80,6 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
-        alt_tab: alt_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LALT>
-                ;
-        };
-        cmd_ctrl_left: cmd_ctrl_left {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD &kp LCTRL>
-                , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LCMD &kp LCTRL>
-                ;
-        };
-        cmd_ctrl_right: cmd_ctrl_right {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD &kp LCTRL>
-                , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LCMD &kp LCTRL>
-                ;
-        };
-        cmd_tab: cmd_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCMD>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LCMD>
-                ;
-        };
-        ctrl_tab: ctrl_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-        ctrl_shft_tab: ctrl_shft_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LSHFT>
-                , <&macro_tap &kp TAB>
-                , <&macro_release &kp LCTRL &kp LSHFT>
-                ;
-        };
     };
 
     keymap {
@@ -159,17 +105,17 @@
 
         Navigation_mouse {
             bindings = <
-&cmd_tab     &alt_tab   &cmd_ctrl_left   &cmd_ctrl_right    &mo 5              &trans    &ctrl_shft_tab  &ctrl_tab    &trans     &trans
-&kp LCMD     &kp LALT   &kp LCTRL        &kp LSHFT          &trans             &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
-&kp LS(TAB)  &mkp MCLK  &mkp RCLK        &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
-                        &trans           &trans             &trans             &trans    &trans
+&kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5              &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans
+&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &trans             &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
+                          &trans            &trans             &trans             &trans    &trans
             >;
         };
 
         Mouse {
             bindings = <
 &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5                               &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
-&trans      &trans             &trans           &trans  &mkp LCLK                           &mkp RCLK                                                                                  &trans  &trans  &trans  &trans
+&trans      &trans             &trans           &trans  &mkp LCLK                           &mkp RCLK                                                    &trans  &trans  &trans  &trans
 &trans      &trans             &trans           &trans  &trans                              &trans                                                                                     &trans  &trans  &trans  &trans
                                &trans           &kp F11 &kp RC(UP_ARROW)                    &trans                                                                                     &trans
             >;

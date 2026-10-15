@@ -107,6 +107,33 @@
                 , <&macro_release &kp LCMD &kp LCTRL>
                 ;
         };
+        cmd_tab: cmd_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCMD>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCMD>
+                ;
+        };
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+        ctrl_shift_tab: ctrl_shft_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LSHFT>
+                , <&macro_tap &kp TAB>
+                , <&macro_release &kp LCTRL &kp LSHFT>
+                ;
+        };
     };
 
     keymap {
@@ -132,10 +159,10 @@
 
         Navigation_mouse {
             bindings = <
-&trans    &trans     &cmd_ctrl_left  &cmd_ctrl_right  &trans            &trans  &trans  &trans  &trans  &trans
-&kp LCMD  &kp LALT   &kp LCTRL       &kp LSHFT        &trans            &trans  &trans  &trans  &trans  &trans
-&alt_tab  &trans     &trans    &trans     &trans      &trans            &trans  &trans  &trans  &trans  &trans
-                               &trans     &trans      &trans            &trans  &trans  &trans  &trans  &trans
+&cmd_tab  &alt_tab   &cmd_ctrl_left  &cmd_ctrl_right  &mo 5             &trans    &ctrl_tab      &ctrl_shft_tab  &trans     &trans
+&kp LCMD  &kp LALT   &kp LCTRL       &kp LSHFT        &trans            &kp LEFT  &kp DOWN       &kp UP          &kp RIGHT  &trans
+&trans    &mkp MCLK  &mkp RCLK       &mkp LCLK        &trans            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP     &kp END    &trans
+                     &trans          &trans           &trans            &trans    &trans
             >;
         };
 

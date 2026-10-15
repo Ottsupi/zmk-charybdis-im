@@ -150,19 +150,19 @@
 
         Number_symbols {
             bindings = <
-&kp EXCL   &kp AT            &kp POUND     &kp DOLLAR   &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp PIPE       &kp AMPERSAND  &kp ASTERISK       &kp CARET
-&kp GRAVE  &kp SINGLE_QUOTE  &kp KP_MINUS  &kp KP_PLUS  &kp LEFT_BRACE                &kp RIGHT_BRACE        &kp UNDER      &kp KP_EQUAL   &kp DOUBLE_QUOTES  &kp TILDE
-&none      &none             &trans        &kp PERCENT  &kp LEFT_BRACKET              &kp RIGHT_BRACKET      &kp BACKSLASH  &trans         &trans             &trans
-                             &trans       &trans        &trans                        &trans                 &trans
+&kp TILDE  &kp N7  &kp N8  &kp N9  &kp GRAVE          &trans         &kp CARET      &kp AMPERSAND  &kp PIPE      &kp DOLLAR 
+&kp AT     &kp N4  &kp N5  &kp N6  &kp BACKSLASH      &kp SLASH      &kp MINUS      &kp PLUS       &kp ASTERISK  &kp HASH
+&kp N0     &kp N1  &kp N2  &kp N3  &kp COLON          &kp SEMICOLON  &kp PERCENT    &trans         &trans        &kp EXCLAMATION
+                   &trans  &trans  &trans             &trans     &trans
             >;
         };
 
         Navigation_mouse {
             bindings = <
-&cmd_tab  &alt_tab   &cmd_ctrl_left  &cmd_ctrl_right  &mo 5             &trans    &ctrl_tab      &ctrl_shft_tab  &trans     &trans
-&kp LCMD  &kp LALT   &kp LCTRL       &kp LSHFT        &trans            &kp LEFT  &kp DOWN       &kp UP          &kp RIGHT  &trans
-&trans    &mkp MCLK  &mkp RCLK       &mkp LCLK        &trans            &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP     &kp END    &trans
-                     &trans          &trans           &trans            &trans    &trans
+&cmd_tab     &alt_tab   &cmd_ctrl_left  &cmd_ctrl_right  &mo 5             &trans    &ctrl_shift_tab  &ctrl_tab    &trans     &trans
+&kp LCMD     &kp LALT   &kp LCTRL       &kp LSHFT        &trans            &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&kp LS(TAB)  &mkp MCLK  &mkp RCLK       &mkp LCLK        &trans            &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
+                        &trans          &trans           &trans            &trans    &trans
             >;
         };
 

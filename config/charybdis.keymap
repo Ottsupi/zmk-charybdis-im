@@ -94,7 +94,7 @@
             >;
         };
 
-        Number_symbols {
+        NUM_SYM {
             bindings = <
 &kp TILDE  &kp N7  &kp N8  &kp N9  &kp GRAVE          &trans         &kp CARET      &kp AMPERSAND  &kp PIPE      &kp DOLLAR 
 &kp AT     &kp N4  &kp N5  &kp N6  &kp BACKSLASH      &kp SLASH      &kp MINUS      &kp PLUS       &kp ASTERISK  &kp HASH
@@ -103,21 +103,21 @@
             >;
         };
 
-        Navigation_mouse {
+        NAV {
             bindings = <
 &kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5              &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans
-&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 4              &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 3              &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
 &kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
                           &trans            &trans             &trans             &trans    &trans
             >;
         };
 
-        Mouse {
+        POINTER {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans   &mo 5                    &trans  CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans   &trans                   &trans  CPI_CYCLE_BACKWARD_BINDING  CPI_CYCLE_FORWARD_BINDING  &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
                                &trans           &kp F11  &kp RC(UP_ARROW)         &trans  &trans
             >;
         };

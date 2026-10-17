@@ -82,6 +82,7 @@
     compatible = "zmk,input-listener";
     status = "okay";
     device = <&trackball>;
+    input-processors = <&zip_xy_scaler 1 1>;
 
     CHARYBDIS_TRACKBALL_PROCESSORS
   };

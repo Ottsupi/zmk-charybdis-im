@@ -106,7 +106,7 @@
         Navigation_mouse {
             bindings = <
 &kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5              &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans
-&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &trans             &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
+&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 4              &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
 &kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
                           &trans            &trans             &trans             &trans    &trans
             >;
@@ -114,14 +114,15 @@
 
         Mouse {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &mo 5                               &trans CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans  &trans  &trans
-&trans      &trans             &trans           &trans  &mkp LCLK                           &mkp RCLK                                                    &trans  &trans  &trans  &trans
-&trans      &trans             &trans           &trans  &trans                              &trans                                                                                     &trans  &trans  &trans  &trans
-                               &trans           &kp F11 &kp RC(UP_ARROW)                    &trans                                                                                     &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans   &mo 5                    &trans  CPI_CYCLE_FORWARD_BINDING CPI_CYCLE_BACKWARD_BINDING  &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
+&trans      &trans             &trans           &trans   &trans                   &trans  &trans                    &trans                      &trans  &trans
+                               &trans           &kp F11  &kp RC(UP_ARROW)         &trans  &trans
             >;
         };
 
-        Scroll {
+        layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
@@ -141,7 +142,6 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
                 &trans  &trans  &trans          &trans  &trans

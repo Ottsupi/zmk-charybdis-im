@@ -4,6 +4,8 @@
  */
 
 #include "charybdis_layers.h"
+#include <dt-bindings/zmk/input_transform.h>
+#include <input/processors.dtsi>
 
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
     scroll { \

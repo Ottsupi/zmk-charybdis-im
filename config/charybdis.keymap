@@ -70,17 +70,17 @@
         };
 
         combo_hash {
-            bindings = <&kp HASH>
+            bindings = <&kp HASH>;
             key-positions = <2 12>;
         };
 
         combo_paren_s {
-            bindings = <&kp LEFT_PARENTHESIS>
+            bindings = <&kp LEFT_PARENTHESIS;
             key-positions = <12 13>;
         };
 
         combo_paren_e {
-            bindings = <&kp RIGHT_PARENTHESIS>
+            bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <15 16>;
         };
     };

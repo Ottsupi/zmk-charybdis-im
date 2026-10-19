@@ -145,11 +145,11 @@
 
         combo_bracket_s {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <11 12>;
+            key-positions = <20 11>;
         };
         combo_bracket_e {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <17 18>;
+            key-positions = <18 29>;
         };
 
         // @ %

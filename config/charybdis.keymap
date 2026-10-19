@@ -183,7 +183,7 @@
 &kp Q             &kp L              &kp D              &kp W              &kp Z                  &kp EQUAL        &kp F                &kp O               &kp U               &kp UNDERSCORE
 &hrm_left LCMD B  &hrm_left LALT R   &hrm_left LCTRL T  &hrm_left LSHFT S  &kp G                  &kp Y            &hrm_right RSHIFT H  &hrm_right RCTRL A  &hrm_right LALT E   &hrm_right RCMD J
 &kp N             &kp X              &kp M              &kp C              &kp V                  &kp K            &kp P                &kp PERIOD          &kp COMMA           &lt 5 I
-                                     &mt LSHIFT ESCAPE  &lt 1 ENTER        &lt 2 TAB              &lt 1 SPACE      &lt 2 BACKSPACE
+                                     &mt LSHIFT ESCAPE  &lt 4 ENTER        &lt 2 TAB              &lt 1 SPACE      &lt 4 BACKSPACE
             >;
         };
 
@@ -198,29 +198,29 @@
 
         NAV {
             bindings = <
-&kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5              &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans
-&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 3              &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
-&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &kp CAPS
-                          &trans            &trans             &trans             &trans    &trans
+&kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5                   &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &kp INSERT
+&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 3                   &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT        &trans
+&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &kp K_CMENU             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END          &kp CAPS
+                          &trans            &trans             &trans                  &trans    &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans                   &trans  CPI_CYCLE_BACKWARD_BINDING  CPI_CYCLE_FORWARD_BINDING  &trans  &trans
-&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
-&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
-&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
-                               &trans           &trans  &trans                   &trans  &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  CPI_CYCLE_BACKWARD_BINDING  CPI_CYCLE_FORWARD_BINDING  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans  &trans  &trans  &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+                &trans  &trans  &trans                   &trans  &trans
             >;
         };
 
         MEDIA_FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans          &trans  &trans
+&trans  &kp F7  &kp F8  &kp F9  &kp F10          &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans      &trans
+&trans  &kp F4  &kp F5  &kp F6  &kp F11          &kp C_PREV  &kp C_PP      &trans        &kp C_NEXT  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F12          &trans      &kp C_BRI_DN  &kp C_BRI_UP  &trans      &trans
+                &trans  &trans  &trans           &trans      &trans
             >;
         };
 

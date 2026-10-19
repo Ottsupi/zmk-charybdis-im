@@ -112,17 +112,17 @@
             >;
         };
 
-        POINTER {
+        SCROLL {
             bindings = <
-&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans   &trans                   &trans  CPI_CYCLE_BACKWARD_BINDING  CPI_CYCLE_FORWARD_BINDING  &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
-&trans      &trans             &trans           &trans   &trans                   &trans  &trans                      &trans                     &trans  &trans
-                               &trans           &kp F11  &kp RC(UP_ARROW)         &trans  &trans
+&kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans  &trans                   &trans  CPI_CYCLE_BACKWARD_BINDING  CPI_CYCLE_FORWARD_BINDING  &trans  &trans
+&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+&trans      &trans             &trans           &trans  &trans                   &trans  &trans                      &trans                     &trans  &trans
+                               &trans           &trans  &trans                   &trans  &trans
             >;
         };
 
-        layer_4 {
+        MEDIA_FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans

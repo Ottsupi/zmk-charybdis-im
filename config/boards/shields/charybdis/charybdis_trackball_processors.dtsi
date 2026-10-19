@@ -9,7 +9,7 @@
 
 #define CHARYBDIS_TRACKBALL_PROCESSORS \
     scroll { \
-        layers = <POINTER>; \
+        layers = <SCROLL>; \
         input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 50>, <&zip_xy_to_scroll_mapper>; \
     }; \
     snipe { \

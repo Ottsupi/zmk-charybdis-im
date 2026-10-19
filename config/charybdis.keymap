@@ -110,7 +110,7 @@
             bindings = <&kp ASTERISK>;
             key-positions = <7 17>;
         };
-        combo_asterisk {
+        combo_dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <8 18>;
         };

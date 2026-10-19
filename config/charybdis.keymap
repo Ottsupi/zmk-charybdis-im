@@ -89,7 +89,7 @@
             bindings = <
 &kp Q             &kp L              &kp D              &kp W              &kp Z                  &kp EQUAL        &kp F                &kp O               &kp U               &kp UNDERSCORE
 &hrm_left LCMD B  &hrm_left LALT R   &hrm_left LCTRL T  &hrm_left LSHFT S  &kp G                  &kp Y            &hrm_right RSHIFT H  &hrm_right RCTRL A  &hrm_right LALT E   &hrm_right RCMD J
-&kp N             &kp X              &kp M              &kp C              &kp V                  &kp K            &lt 4 P              &kp PERIOD          &kp COMMA           &lt 5 I
+&kp N             &kp X              &kp M              &kp C              &kp V                  &kp K            &kp P                &kp PERIOD          &kp COMMA           &lt 5 I
                                      &mt LSHIFT ESCAPE  &lt 1 ENTER        &lt 2 TAB              &lt 1 SPACE      &lt 2 BACKSPACE
             >;
         };
@@ -107,7 +107,7 @@
             bindings = <
 &kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5              &trans    &kp LC(LS(TAB))  &kp LC(TAB)  &trans     &trans
 &kp LCMD     &kp LALT     &kp LCTRL         &kp LSHFT          &mo 3              &kp LEFT  &kp DOWN         &kp UP       &kp RIGHT  &trans
-&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &trans
+&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &trans             &kp HOME  &kp PAGE_DOWN    &kp PAGE_UP  &kp END    &kp CAPS
                           &trans            &trans             &trans             &trans    &trans
             >;
         };

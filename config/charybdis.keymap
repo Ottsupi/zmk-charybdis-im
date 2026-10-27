@@ -200,16 +200,16 @@
 &kp TILDE  &kp N7  &kp N8  &kp N9  &kp GRAVE          &trans         &kp CARET      &kp AMPERSAND  &kp PIPE      &kp DOLLAR 
 &kp AT     &kp N4  &kp N5  &kp N6  &kp BACKSLASH      &kp SLASH      &kp MINUS      &kp PLUS       &kp ASTERISK  &kp HASH
 &kp N0     &kp N1  &kp N2  &kp N3  &kp COLON          &kp SEMICOLON  &kp PERCENT    &trans         &trans        &kp EXCLAMATION
-                   &trans  &trans  &trans             &trans     &trans
+                   &trans  &trans  &trans             &trans         &trans
             >;
         };
 
         NAV {
             bindings = <
-&kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5                   &trans     &kp LC(LS(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &kp INSERT
-&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHIFT         &mo 3                   &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT        &trans
-&kp LS(TAB)  &mkp MCLK    &mkp RCLK         &mkp LCLK          &kp K_CMENU             &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP  &kp END          &kp CAPS
-                          &trans            &trans             &trans                  &bspc_del  &trans
+&kp LG(TAB)  &kp LA(TAB)  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))  &mo 5                   &kp ESCAPE  &kp LC(LS(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &kp INSERT
+&kp LCMD     &kp LALT     &kp LCTRL         &kp LSHIFT         &mo 3                   &kp LEFT    &kp DOWN         &kp UP       &kp RIGHT        &trans
+&kp TAB      &mkp MCLK    &mkp RCLK         &mkp LCLK          &kp K_CMENU             &kp HOME    &kp PAGE_DOWN    &kp PAGE_UP  &kp END          &kp CAPS
+                          &trans            &trans             &trans                  &kp ENTER   &bspc_del
             >;
         };
 

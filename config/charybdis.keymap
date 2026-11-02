@@ -68,11 +68,11 @@
             bindings = <&kp COLON>;
             key-positions = <2 3>;
         };
-        combo_colon {
+        combo_grave {
             bindings = <&kp GRAVE>;
             key-positions = <3 4>;
         };
-        combo_colon {
+        combo_tilde {
             bindings = <&kp TILDE>;
             key-positions = <5 6>;
         };
@@ -177,12 +177,12 @@
             bindings = <&kp SLASH>;
             key-positions = <15 25>;
         };
-        combo_minus {
-            bindings = <&kp MINUS>;
-            key-positions = <16 26>;
-        };
         combo_plus {
             bindings = <&kp PLUS>;
+            key-positions = <16 26>;
+        };
+        combo_minus {
+            bindings = <&kp MINUS>;
             key-positions = <17 27>;
         };
         combo_underscore {

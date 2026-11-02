@@ -6,6 +6,5 @@
 #pragma once
 
 #define BASE 0
-#define NUM_SYM 1
-#define NAV 2
-#define SCROLL 3
+#define NAV 3
+#define SCROLL 4

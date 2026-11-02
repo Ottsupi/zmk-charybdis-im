@@ -54,28 +54,10 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
         };
-
-        bspc_del: backspace_delete {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_RSFT)>;
-        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        toggle_mouse_layer {
-            bindings = <&tog 3>;
-            key-positions = <33 9>;
-        };
-
-        return_base_layer {
-            bindings = <&to 0>;
-            key-positions = <5 33>;
-        };
 
         // " : ; '
         combo_double_qoutes {
@@ -168,18 +150,6 @@
         combo_percent {
             bindings = <&kp PERCENT>;
             key-positions = <16 26>;
-        };
-    };
-
-    macros {
-        zed_em_kay: zed_em_kay {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &kp Z &kp M &kp K>
-                , <&macro_release &kp LSHFT>
-                ;
         };
     };
 

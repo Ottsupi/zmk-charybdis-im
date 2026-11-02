@@ -31,29 +31,6 @@
 
 / {
     behaviors {
-        hrm_right: hrm_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Homerow Mods Right";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
-        };
-
-        hrm_left: hrm_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Homerow Mods Left";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34>;
-        };
     };
 
     combos {
@@ -196,10 +173,10 @@
 
         BASE {
             bindings = <
-&kp Q             &kp L              &kp D              &kp W              &kp Z                  &kp EQUAL        &kp F                &kp O               &kp U               &kp BACKSPACE
-&hrm_left LCMD B  &hrm_left LALT R   &hrm_left LCTRL T  &hrm_left LSHFT S  &kp G                  &kp Y            &hrm_right RSHIFT H  &hrm_right RCTRL A  &hrm_right LALT E   &hrm_right RCMD J
-&kp N             &kp X              &kp M              &kp C              &kp V                  &kp K            &kp P                &kp PERIOD          &kp COMMA           &kp I
-                                     &kp ESCAPE         &mo 4              &mo 2                  &kp SPACE        &mo 1
+&kp Q  &kp L  &kp D  &kp W  &kp Z         &kp EQUAL  &kp F  &kp O       &kp U      &kp BACKSPACE
+&kp B  &kp R  &kp T  &kp S  &kp G         &kp Y      &kp H  &kp A       &kp E      &kp J
+&kp N  &kp X  &kp M  &kp C  &kp V         &kp K      &kp P  &kp PERIOD  &kp COMMA  &kp I
+       &kp ESCAPE    &mo 4  &mo 2         &kp SPACE  &mo 1
             >;
         };
 

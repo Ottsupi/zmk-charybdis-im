@@ -176,7 +176,7 @@
         };
 
         // Keyboard controls / bluetooth layer on master right side 
-        combo_underscore {
+        combo_bluetooth_layer {
             bindings = <&mo 4>;
             key-positions = <33 34>;
         };

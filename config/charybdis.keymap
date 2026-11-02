@@ -59,7 +59,7 @@
     combos {
         compatible = "zmk,combos";
 
-        // " : ; '
+        // ":` ~;'
         combo_double_qoutes {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <1 2>;
@@ -68,7 +68,14 @@
             bindings = <&kp COLON>;
             key-positions = <2 3>;
         };
-
+        combo_colon {
+            bindings = <&kp GRAVE>;
+            key-positions = <3 4>;
+        };
+        combo_colon {
+            bindings = <&kp TILDE>;
+            key-positions = <5 6>;
+        };
         combo_semi_colon {
             bindings = <&kp SEMICOLON>;
             key-positions = <6 7>;
@@ -78,7 +85,7 @@
             key-positions = <7 8>;
         };
 
-        // ^#! ?*$
+        // ^#!| &?*$
         combo_caret {
             bindings = <&kp CARET>;
             key-positions = <1 11>;
@@ -91,7 +98,14 @@
             bindings = <&kp EXCLAMATION>;
             key-positions = <3 13>;
         };
-
+        combo_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <4 14>;
+        };
+        combo_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <5 15>;
+        };
         combo_question_mark {
             bindings = <&kp QUESTION>;
             key-positions = <6 16>;
@@ -142,14 +156,38 @@
             key-positions = <18 29>;
         };
 
-        // @ %
+        // %F5@\ /-+_
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <11 21>;
+        };
+        combo_refresh {
+            bindings = <&kp F5>;
+            key-positions = <12 22>;
+        };
         combo_at {
             bindings = <&kp AT>;
             key-positions = <13 23>;
         };
-        combo_percent {
-            bindings = <&kp PERCENT>;
+        combo_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <14 24>;
+        };
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <15 25>;
+        };
+        combo_minus {
+            bindings = <&kp MINUS>;
             key-positions = <16 26>;
+        };
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <17 27>;
+        };
+        combo_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <18 28>;
         };
     };
 

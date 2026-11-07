@@ -215,10 +215,10 @@
 
         NAV {
             bindings = <
-&kp LG(TAB)  &kp LA(LS(LEFT_BRACKET))  &kp LA(LS(RIGHT_BRACKET))  &kp LG(LC(RIGHT))  &mo 4                   &trans     &kp LC(LS(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &kp DELETE
-&kp LCMD     &kp LALT                  &kp LCTRL                  &kp LSHIFT         &kp ESCAPE              &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT        &kp INSERT
-&kp TAB      &mkp MCLK                 &mkp RCLK                  &mkp LCLK          &kp K_CMENU             &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP  &kp END          &kp CAPS
-                                       &trans                     &trans             &trans                  &kp ENTER  &trans
+&kp LG(TAB)  &kp LA(TAB)  &kp LG(LEFT_BRACKET) &kp LG(RIGHT_BRACKET)  &mo 4                   &trans     &kp LC(LS(TAB))  &kp LC(TAB)  &kp PRINTSCREEN  &kp DELETE
+&kp LCMD     &kp LALT     &kp LCTRL            &kp LSHIFT             &kp ESCAPE              &kp LEFT   &kp DOWN         &kp UP       &kp RIGHT        &kp INSERT
+&kp TAB      &mkp MCLK    &mkp RCLK            &mkp LCLK              &kp K_CMENU             &kp HOME   &kp PAGE_DOWN    &kp PAGE_UP  &kp END          &kp CAPS
+                          &trans               &trans                 &trans                  &kp ENTER  &trans
             >;
         };
 
